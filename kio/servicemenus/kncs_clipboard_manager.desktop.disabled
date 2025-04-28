@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=clipboardMGR;
+MimeType=all/all;
+Type=Service
+Icon=kncs_nextcloud
+X-KDE-Priority=TopLevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,all/all;
+X-KDE-Submenu=Nextcloud
+
+[Desktop Action clipboardMGR]
+Name=Clipboard Manager
+Icon=kncs_nextcloud
+Exec=/media/dal/.local/share/scripts/kncs_clipboard_manager.sh %F

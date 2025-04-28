@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=generateInternalShareLINK;
+MimeType=all/all;
+Type=Service
+Icon=kncs_nextcloud
+X-KDE-Priority=TopLevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,all/all;
+X-KDE-Submenu=Nextcloud
+
+[Desktop Action generateInternalShareLINK]
+Name=Get Internal Share Link
+Icon=kncs_nextcloud
+Exec=/media/dal/.local/share/scripts/kncs_get_internal_share_link.sh %F
