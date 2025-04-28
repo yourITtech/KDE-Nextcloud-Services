@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=generatePreviewURL;
+MimeType=image/jpeg;image/png;image/gif;image/bmp;image/tiff;image/svg+xml;image/webp;image/x-icon;
+Type=Service
+Icon=kncs_nextcloud
+X-KDE-Priority=TopLevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,image/jpeg;image/png;image/gif;image/bmp;image/tiff;image/svg+xml;image/webp;image/x-icon;
+X-KDE-Submenu=Nextcloud
+
+[Desktop Action generatePreviewURL]
+Name=Generate Preview URL
+Icon=kncs_nextcloud
+Exec=/media/dal/.local/share/scripts/kncs_generate_preview_url.sh %F
