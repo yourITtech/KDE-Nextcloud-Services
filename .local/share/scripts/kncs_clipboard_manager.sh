@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$HOME/.local/share/scripts/kncs_variables.sh",
+source "$HOME/.local/share/scripts/kncs_variables.sh"
 
 # Validate current_date
 if ! date -d "$current_date" >/dev/null 2>&1; then
