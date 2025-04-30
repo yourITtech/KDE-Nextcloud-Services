@@ -10,9 +10,9 @@ zenity --question --title="Disconnect from Nextcloud" \
 
 # Check user response
 if [ $? -eq 0 ]; then
-    echo "User chose Yes: Disconnecting from Nextcloud."
+    zenity --error --text="Disconnecting from Nextcloud."
 else
-    echo "User chose No: Aborting disconnection."
+    zenity --error --text="Aborting disconnection."
     exit 1
 fi
 
