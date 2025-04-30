@@ -118,7 +118,7 @@ This is the current list of features this service menu will add to your dolphin 
   
   - If the `item_source` is returned, then the script manufactures the internal link and Nextcloud url from the KWallet.
     
-    - https://<nc_url>/f/<item_source>
+    - `https://<nc_url>/f/<item_source>`
 
 - `kncs_disconnect_nc.sh`
   
