@@ -42,6 +42,10 @@ This is the current list of features this service menu will add to your dolphin 
 
 - Icons: `~/.local/share/icons`
 
+#### Uninstall
+
+- Delete all files labeled `kncs_` in the above file locations.
+
 #### Script Info
 
 - `kncs_connect_nc.sh`
@@ -66,20 +70,65 @@ This is the current list of features this service menu will add to your dolphin 
 
 - `kncs_generate_preview_url.sh`
   
-  - This script was designed to
+  - This script was designed to create a public share link for images so you can share them with users using the share link appended with `/preview`. 
+  
+  - The script gets your Nextcloud path when you use the right click menu. 
+  
+  - Then it queries your KWallet info with the path to send a POST to the file in your Nextcloud to set a read only public share, with a 7 day expire, then places the share link into your clipboard.
+  
+  - The expiration date, the file and URL is logged in the `.kdencservicemenu` file.
 
 - `kncs_generate_share_url.sh`
   
-  - This script was designed to
+  - This script was designed to create a public share link for files and folders so you can share them with external users using the share link. 
+  
+  - The script gets your Nextcloud path when you use the right click menu. 
+  
+  - A Zenity form is presented to the user asking the user to define an expiration date.
+  
+  - Another Zenity form is presented to the user asking to define Share Label, Note to Recipient, Password, and Edit Permissions. 
+  
+  - Then it queries your KWallet info with all the details above to send a POST to the file or folder in your Nextcloud, with the settings defined, then places the share link into your clipboard.
+  
+  - The expiration date, the file/folder and URL is logged in the `.kdencservicemenu` file.
 
 - `kncs_generate_internal_share.sh`
   
-  - This script was designed to
+  - This script was designed to create a internal share link for files and folders so you can share them with internal Nextcloud users using the share link.
+  
+  - The script gets your Nextcloud path when you use the right click menu.
+  
+  - A GET request is sent to the Nextcloud server to get a list of available users your users can share with. 
+  
+  - Then a Zenity form is presented asking the user to define what Nextcloud users to share with.
+  
+  - Another Zenity form is presented to the user asking the user to define an expiration date.
+  
+  - Another Zenity form is presented to the user asking to define Note to Recipient, Edit Permissions, and Edit Permissions.
+  
+  - Then it queries your KWallet info with all the details above to send a POST to the file or folder in your Nextcloud with the settings defined.
+  
+  - Based on the internal users notification settings, if enabled will receive and email and/or push notification the share was created.
 
 - `kncs_get_internal_share_link.sh`
   
-  - This script was designed to
+  - This script was designed to acquire the share link for an internal share. There is currently a limitation in the NC API where you cant explicitly access this URL through a GET call. To get this link the script has to manufacture it.
+  
+  - A GET request is sent to get the file ID. If the `item_source` field is not returned, then the file/folder does not have a internal share configured.
+  
+  - If the `item_source` is returned, then the script manufactures the internal link and Nextcloud url from the KWallet.
+    
+    - https://<nc_url>/f/<item_source>
 
 - `kncs_disconnect_nc.sh`
   
-  - This script was designed to
+  - This script was designed to "Disconnect" your Dolphin from the Nextcloud Server.
+  
+  - A prompt is presented asking users to confirm they want to disconnect from Nextcloud. After pressing yes, the script delete the `.kdencservicemenu`, deletes the KWallet entry created on connection and then calls the `kncs_enable_disable.sh` script is disabled the service menus.
+  
+  - The `Connect to Nextcloud` menu is re-enabled so that you can re-connect at a later time.
+  
+  
+  
+  
+  
