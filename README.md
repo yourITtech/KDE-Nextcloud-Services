@@ -10,11 +10,17 @@ Nextcloud has lacked service menu integration. This project aims to add Nextclou
 
 #### Installation
 
-- `cd ~`
-
-- `git clone https://github.com/yourITtech/KDE-Nextcloud-Services.git .`
+- Download release .zip
   
-  - Make sure to include the `.` so that is doesn't clone the root git folder.
+- Place all the `.sh` (Scripts), `.desktop` (Service Menus), `.svg` (Icons) in their appropriate folders as specified below.
+
+#### Locations
+
+- Scripts: `~/.local/share/scripts`
+
+- Service Menus: `~/.local/share/kio/servicemenus`
+
+- Icons: `~/.local/share/icons`
 
 #### Features
 
@@ -47,14 +53,6 @@ This is the current list of features this service menu will add to your dolphin 
 - Disconnect from Nextcloud
   
   - This option will remove the KWallet entries, disabled all service menus, clean up logs, and restore the "Connect to Nextcloud" service menu.
-
-#### Locations
-
-- Scripts: `~/.local/share/scripts`
-
-- Service Menus: `~/.local/share/kio/servicemenus`
-
-- Icons: `~/.local/share/icons`
 
 #### Uninstall
 
