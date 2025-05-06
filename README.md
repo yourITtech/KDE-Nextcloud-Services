@@ -12,7 +12,7 @@ Nextcloud has lacked service menu integration. This project aims to add Nextclou
 
 - Download release .zip
   
-- Place all the `.sh` (Scripts), `.desktop` (Service Menus), `.svg` (Icons) in their appropriate folders as specified below.
+- Place all the `.sh` (Scripts), `.desktop & .desktop.disabled` (Service Menus), `.svg` (Icons) in their appropriate folders as specified below.
 
 #### Locations
 
