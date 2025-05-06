@@ -1,4 +1,4 @@
-# KDE-Nextcloud
+# KDE-Nextcloud-Services
 
 Nextcloud has lacked service menu integration. This project aims to add Nextcloud integration directly into the KDE windows manager using the NC API system, so that you can be more productive while working. No more needing to keep the WebUI open to manage file access for internal and external users.
 
