@@ -15,6 +15,7 @@ Nextcloud has lacked service menu integration. This project aims to add Nextclou
 - Place all the `.sh` (Scripts), `.desktop & .desktop.disabled` (Service Menus), `.svg` (Icons) in their appropriate folders as specified below.
 
 #### Locations
+If these locations do not exist, create them.
 
 - Scripts: `~/.local/share/scripts`
 
