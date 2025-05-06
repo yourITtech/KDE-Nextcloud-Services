@@ -58,6 +58,8 @@ This is the current list of features this service menu will add to your dolphin 
 
 #### Uninstall
 
+- Click Disconnect from Nextcloud in the service menu.
+
 - Delete all files labeled `kncs_` in the above file locations.
 
 #### Script Info
