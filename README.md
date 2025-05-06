@@ -2,6 +2,10 @@
 
 Nextcloud has lacked service menu integration. This project aims to add Nextcloud integration directly into the KDE windows manager using the NC API system, so that you can be more productive while working. No more needing to keep the WebUI open to manage file access for internal and external users.
 
+#### Dependencies
+
+`KDE Plasma 6`, `curl`, `zenity`, `kwallet`, `busctl`
+
 #### Features
 
 This is the current list of features this service menu will add to your dolphin file manager in KDE. See "Script Info" for more detailed information on what each script does.
@@ -62,7 +66,7 @@ This is the current list of features this service menu will add to your dolphin 
 
 - `kncs_variables.sh`
   
-  -  This script was designed to be sourced into other scripts. This houses all the constant variables needed for this app to operate.
+  - This script was designed to be sourced into other scripts. This houses all the constant variables needed for this app to operate.
 
 - `kncs_clipboard_manager.sh`
   
@@ -127,8 +131,3 @@ This is the current list of features this service menu will add to your dolphin 
   - A prompt is presented asking users to confirm they want to disconnect from Nextcloud. After pressing yes, the script delete the `.kdencservicemenu`, deletes the KWallet entry created on connection and then calls the `kncs_enable_disable.sh` script is disabled the service menus.
   
   - The `Connect to Nextcloud` menu is re-enabled so that you can re-connect at a later time.
-  
-  
-  
-  
-  
