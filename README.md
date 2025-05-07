@@ -23,6 +23,12 @@ If these locations do not exist, create them.
 
 - Icons: `~/.local/share/icons`
 
+#### Uninstall
+
+- Click Disconnect from Nextcloud in the service menu.
+
+- Delete all files labeled `kncs_` in the above file locations.
+
 #### Features
 
 This is the current list of features this service menu will add to your dolphin file manager in KDE. See "Script Info" for more detailed information on what each script does.
@@ -54,12 +60,6 @@ This is the current list of features this service menu will add to your dolphin 
 - Disconnect from Nextcloud
   
   - This option will remove the KWallet entries, disabled all service menus, clean up logs, and restore the "Connect to Nextcloud" service menu.
-
-#### Uninstall
-
-- Click Disconnect from Nextcloud in the service menu.
-
-- Delete all files labeled `kncs_` in the above file locations.
 
 #### Script Info
 
