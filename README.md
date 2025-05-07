@@ -1,6 +1,6 @@
 # KDE-Nextcloud-Services
 
-Nextcloud has lacked service menu integration. This project aims to add Nextcloud integration directly into the KDE windows manager using the NC API system, so that you can be more productive while working. No more needing to keep the WebUI open to manage file access for internal and external users.
+Kubuntu v24.10 has had issue integrating with Nextcloud using Dolphin. This project aims to add Nextcloud integration directly into the KDE windows manager using the NC API system in a very direct way using curl and bash scripts.
 
 ![image](https://github.com/user-attachments/assets/c1b2f5b5-1616-40b5-9ac5-9fcfcca333f1)
 
