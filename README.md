@@ -21,7 +21,7 @@ If these locations do not exist, create them.
 
 - Service Menus: `~/.local/share/kio/servicemenus`
 
-- Icons: `~/.local/share/icons`
+- Icons: `~/.local/share/icons/hicolor/scalable/apps`
 
 #### Uninstall
 
