@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=disconnectNC;
+MimeType=all/all;
+Type=Service
+Icon=kncs_nextcloud
+X-KDE-Priority=TopLevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-Submenu=Nextcloud
+
+[Desktop Action disconnectNC]
+Name=Disconnect from Nextcloud
+Icon=kncs_nextcloud
+Exec=/media/dal/.local/share/scripts/kncs_disconnect_nc.sh %F
